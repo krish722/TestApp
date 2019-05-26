@@ -16,6 +16,8 @@
 		71EF95A9229A7D200096D290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71EF95A4229A7D200096D290 /* Main.storyboard */; };
 		71EF95AB229A7D750096D290 /* TAStoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF95AA229A7D750096D290 /* TAStoreListViewController.swift */; };
 		71EF95AD229A7ED20096D290 /* TAStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF95AC229A7ED20096D290 /* TAStore.swift */; };
+		71EF95B1229A7F5C0096D290 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF95AF229A7F5C0096D290 /* BaseAPI.swift */; };
+		71EF95B2229A7F5C0096D290 /* TAStoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF95B0229A7F5C0096D290 /* TAStoreAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		71EF95A5229A7D200096D290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71EF95AA229A7D750096D290 /* TAStoreListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAStoreListViewController.swift; sourceTree = "<group>"; };
 		71EF95AC229A7ED20096D290 /* TAStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStore.swift; sourceTree = "<group>"; };
+		71EF95AF229A7F5C0096D290 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		71EF95B0229A7F5C0096D290 /* TAStoreAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAStoreAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				71EF959A229A7D200096D290 /* Resource */,
 				71EF95A1229A7D200096D290 /* UI */,
 				71EF9599229A7D1F0096D290 /* View */,
+				71EF95AE229A7F5C0096D290 /* Service */,
 				71EF9568229A7C1F0096D290 /* AppDelegate.swift */,
 				71EF9577229A7C200096D290 /* Info.plist */,
 			);
@@ -177,6 +182,15 @@
 				71EF95A4229A7D200096D290 /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		71EF95AE229A7F5C0096D290 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				71EF95AF229A7F5C0096D290 /* BaseAPI.swift */,
+				71EF95B0229A7F5C0096D290 /* TAStoreAPI.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +327,9 @@
 				71EF9569229A7C1F0096D290 /* AppDelegate.swift in Sources */,
 				71EF95AB229A7D750096D290 /* TAStoreListViewController.swift in Sources */,
 				71EF95AD229A7ED20096D290 /* TAStore.swift in Sources */,
+				71EF95B2229A7F5C0096D290 /* TAStoreAPI.swift in Sources */,
 				71EF95A7229A7D200096D290 /* TestApp.xcdatamodeld in Sources */,
+				71EF95B1229A7F5C0096D290 /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
