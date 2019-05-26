@@ -9,10 +9,10 @@
 import Foundation
 
 struct TAStoreAPI {
-    static func decodeJson(_ data: Data) -> [PTStore]? {
+    static func decodeJson(_ data: Data) -> [TAStore]? {
         let decoder = JSONDecoder()
         do {
-            let stores = try decoder.decode([PTStore].self, from: data)
+            let stores = try decoder.decode([TAStore].self, from: data)
             return stores
         }
         catch {
@@ -20,7 +20,7 @@ struct TAStoreAPI {
         }
         return nil
     }
-    static func getStores(onSuccess successCallback: @escaping (([PTStore]) -> Void),
+    static func getStores(onSuccess successCallback: @escaping (([TAStore]) -> Void),
                   onFailure failureCallback: @escaping ((String?) -> Void)
         )  {
         let path = "store/v2/stores"
@@ -32,7 +32,7 @@ struct TAStoreAPI {
         BaseAPI.executeRequest(api: path, payload: param, completion: {  storesJSON in
             
               guard  let stores = self.decodeJson(storesJSON) else {
-                    failureCallback(nil)
+                    failureCallback("Filed to format JSON")
                     return
             }
             successCallback(stores)
