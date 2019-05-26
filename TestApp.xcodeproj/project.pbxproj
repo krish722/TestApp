@@ -15,6 +15,7 @@
 		71EF95A8229A7D200096D290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71EF95A2229A7D200096D290 /* LaunchScreen.storyboard */; };
 		71EF95A9229A7D200096D290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71EF95A4229A7D200096D290 /* Main.storyboard */; };
 		71EF95AB229A7D750096D290 /* TAStoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF95AA229A7D750096D290 /* TAStoreListViewController.swift */; };
+		71EF95AD229A7ED20096D290 /* TAStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF95AC229A7ED20096D290 /* TAStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		71EF95A3229A7D200096D290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71EF95A5229A7D200096D290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71EF95AA229A7D750096D290 /* TAStoreListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAStoreListViewController.swift; sourceTree = "<group>"; };
+		71EF95AC229A7ED20096D290 /* TAStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		71EF959F229A7D200096D290 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				71EF95AC229A7ED20096D290 /* TAStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				71EF9569229A7C1F0096D290 /* AppDelegate.swift in Sources */,
 				71EF95AB229A7D750096D290 /* TAStoreListViewController.swift in Sources */,
+				71EF95AD229A7ED20096D290 /* TAStore.swift in Sources */,
 				71EF95A7229A7D200096D290 /* TestApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
